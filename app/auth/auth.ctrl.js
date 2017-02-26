@@ -20,7 +20,8 @@
 
         authCtrl.login = function () {
             jaAuth
-                .$signInWithEmailAndPassword(authCtrl.user.email, authCtrl.user.password)
+                .$signInWithEmailAndPassword(authCtrl.user.email,
+                    authCtrl.user.password)
                 .then(function(auth){
                     console.log(auth);
                     $state.go('home');

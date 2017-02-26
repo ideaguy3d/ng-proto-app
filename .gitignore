@@ -5,7 +5,6 @@ dist
 bower_components
 .idea
 .bowerrc
-
 app/app.js
 bower.json
 firebase.json
