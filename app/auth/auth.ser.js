@@ -6,7 +6,7 @@
     "use strict";
 
     var app = angular.module('app'),
-      serviceId = 'jaAuth';
+      serviceId = 'jAuth';
 
     app.factory(serviceId, ['$firebaseAuth', jaAuthClass]);
     

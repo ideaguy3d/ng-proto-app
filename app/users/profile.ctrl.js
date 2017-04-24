@@ -11,10 +11,11 @@
 
             profileCtrl.profile = profile;
 
-            profileCtrl.updateProfile = function(){
+            profileCtrl.updateProfile = function() {
                 profileCtrl.profile.emailHash = md5.createHash(auth.email);
-                profileCtrl.profile.$save();
-                $state.go('home'); 
+                profileCtrl.profile.$save().then(function(){
+                    $state.go('channels');
+                });
             }
         }
     ])

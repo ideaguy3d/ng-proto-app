@@ -7,10 +7,13 @@
 		<p ng-hide="profileCtrl.profile.displayName">
 			You'll need a display name before you can start chatting.
 		</p>
+		
 		<div class="input-group">
 			<input required type="text" class="form-control"
-			       placeholder="Display Name" ng-model="profileCtrl.profile.displayName">
+			       placeholder="Display Name" ng-model="profileCtrl.profile.displayName"
+			>
 		</div>
+		
 		<input type="submit" class="btn btn-info" value="Set Display Name">
 	</form>
 </div>
